@@ -34,7 +34,7 @@
     "build": "rollup -c"
   },
   "name": "@itcode-dev/react-components-library-starter",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "repository": "https://github.com/itcode-dev/react-components-library-starter",
