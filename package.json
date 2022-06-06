@@ -1,19 +1,27 @@
 {
+  "name": "@itcode-dev/react-components-library-starter",
+  "version": "2.0.0",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "repository": "https://github.com/itcode-dev/react-components-library-starter",
+  "author": "RWB0104 <psj2716@gmail.com>",
+  "license": "MIT",
+  "private": false,
   "devDependencies": {
     "@babel/core": "^7.18.2",
     "@rollup/plugin-commonjs": "^22.0.0",
     "@rollup/plugin-node-resolve": "^13.3.0",
     "@rollup/plugin-typescript": "^8.3.2",
-    "@storybook/addon-actions": "^6.5.6",
-    "@storybook/addon-essentials": "^6.5.6",
-    "@storybook/addon-interactions": "^6.5.6",
-    "@storybook/addon-links": "^6.5.6",
-    "@storybook/builder-webpack4": "^6.5.6",
-    "@storybook/manager-webpack4": "^6.5.6",
+    "@storybook/addon-actions": "^6.5.7",
+    "@storybook/addon-essentials": "^6.5.7",
+    "@storybook/addon-interactions": "^6.5.7",
+    "@storybook/addon-links": "^6.5.7",
+    "@storybook/builder-webpack4": "^6.5.7",
+    "@storybook/manager-webpack4": "^6.5.7",
     "@storybook/preset-scss": "^1.0.3",
-    "@storybook/react": "^6.5.6",
+    "@storybook/react": "^6.5.7",
     "@storybook/testing-library": "^0.0.11",
-    "@types/react": "^18.0.11",
+    "@types/react": "^18.0.12",
     "babel-loader": "^8.2.5",
     "postcss": "^8.4.14",
     "react": "^18.1.0",
@@ -25,20 +33,11 @@
     "typescript": "^4.7.3"
   },
   "dependencies": {
-    "classnames": "^2.3.1",
-    "style-inject": "^0.3.0"
+    "classnames": "^2.3.1"
   },
   "scripts": {
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "build": "rollup -c"
-  },
-  "name": "@itcode-dev/react-components-library-starter",
-  "version": "1.0.6",
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
-  "repository": "https://github.com/itcode-dev/react-components-library-starter",
-  "author": "RWB0104 <psj2716@gmail.com>",
-  "license": "MIT",
-  "private": false
+  }
 }
