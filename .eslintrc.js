@@ -51,6 +51,7 @@ module.exports = {
 			}
 		],
 		indent: [ 'error', 'tab' ],
+		'jsx-a11y/control-has-associated-label': 'off',
 		'jsx-quotes': [ 'error', 'prefer-single' ],
 		'linebreak-style': 'off',
 		'max-len': 'off',

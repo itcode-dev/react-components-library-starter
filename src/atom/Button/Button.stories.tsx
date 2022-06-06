@@ -1,5 +1,5 @@
 /**
- * Button Storybook 모듈
+ * 버튼 Storybook 모듈
  *
  * @author RWB
  * @since 2022.06.06 Mon 17:45:58
@@ -46,6 +46,11 @@ Sandbox.args = {
 	disabled: false
 };
 
+/**
+ * 테두리 예시 JSX 반환 메서드
+ *
+ * @returns {JSX.Element} JSX
+ */
 export function Border(): JSX.Element
 {
 	return (
@@ -59,6 +64,11 @@ export function Border(): JSX.Element
 	);
 }
 
+/**
+ * 컬러 예시 JSX 반환 메서드
+ *
+ * @returns {JSX.Element} JSX
+ */
 export function Color(): JSX.Element
 {
 	return (
@@ -75,6 +85,11 @@ export function Color(): JSX.Element
 	);
 }
 
+/**
+ * 비활성화 예시 JSX 반환 메서드
+ *
+ * @returns {JSX.Element} JSX
+ */
 export function Disabled(): JSX.Element
 {
 	return (
