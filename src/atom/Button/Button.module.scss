@@ -1,0 +1,94 @@
+@mixin color($primary, $secondary) {
+	background-color: $primary;
+	border: 1px solid $secondary;
+}
+
+.button {
+	$color: black;
+
+	@include color($color, $color);
+
+	color: white;
+	font-family: inherit;
+
+	padding: 5px 15px;
+
+	cursor: pointer;
+
+	transition: 0.3s;
+
+	&:hover:not(:disabled) {
+		background-color: transparent;
+		color: $color;
+	}
+
+	&:active {
+		opacity: 0.3;
+	}
+
+	&:disabled {
+		opacity: 0.5;
+
+		cursor: not-allowed;
+	}
+
+	&.border-round {
+		border-radius: 5px;
+	}
+
+	&.border-circle {
+		border-radius: 100px;
+	}
+
+	&.color-primary {
+		$color: dodgerblue;
+
+		@include color($color, $color);
+
+		&:hover:not(:disabled) {
+			color: $color;
+		}
+	}
+
+	&.color-submit {
+		$color: limegreen;
+
+		@include color($color, $color);
+
+		&:hover:not(:disabled) {
+			color: $color;
+		}
+	}
+
+	&.color-warn {
+		$color: orange;
+
+		@include color($color, $color);
+
+		&:hover:not(:disabled) {
+			color: $color;
+		}
+	}
+
+	&.color-error {
+		$color: crimson;
+
+		@include color($color, $color);
+
+		&:hover:not(:disabled) {
+			color: $color;
+		}
+	}
+
+	&.color-reverse {
+		$color: white;
+
+		@include color($color, $color);
+
+		color: black;
+
+		&:hover:not(:disabled) {
+			color: $color;
+		}
+	}
+}
