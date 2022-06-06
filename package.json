@@ -1,6 +1,6 @@
 {
   "name": "@itcode-dev/react-components-library-starter",
-  "version": "2.0.12",
+  "version": "2.0.13",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "repository": "https://github.com/itcode-dev/react-components-library-starter",
@@ -62,9 +62,5 @@
     "build-storybook": "build-storybook",
     "prebuild": "shx rm -rf ./dist",
     "build": "rollup -c"
-  },
-  "peerDependencies": {
-    "react-icons": "^4.4.0",
-    "style-inject": "^0.3.0"
   }
 }
