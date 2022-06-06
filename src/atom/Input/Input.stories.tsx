@@ -44,3 +44,107 @@ Sandbox.args = {
 	disabled: false,
 	required: false
 };
+
+/**
+ * 테두리 예시 JSX 반환 메서드
+ *
+ * @returns {JSX.Element} JSX
+ */
+export function Border(): JSX.Element
+{
+	return (
+		<section className={cn('root')}>
+			<div className={cn('row')}>
+				<Input border='flat' placeholder='flat' />
+			</div>
+
+			<div className={cn('row')}>
+				<Input border='round' placeholder='round' />
+			</div>
+
+			<div className={cn('row')}>
+				<Input border='circle' placeholder='circle' />
+			</div>
+		</section>
+	);
+}
+
+/**
+ * 컬러 예시 JSX 반환 메서드
+ *
+ * @returns {JSX.Element} JSX
+ */
+export function Color(): JSX.Element
+{
+	return (
+		<section className={cn('root')}>
+			<div className={cn('row')}>
+				<Input color='basic' placeholder='basic' />
+			</div>
+
+			<div className={cn('row')}>
+				<Input color='primary' placeholder='primary' />
+			</div>
+
+			<div className={cn('row')}>
+				<Input color='submit' placeholder='submit' />
+			</div>
+
+			<div className={cn('row')}>
+				<Input color='warn' placeholder='warn' />
+			</div>
+
+			<div className={cn('row')}>
+				<Input color='error' placeholder='error' />
+			</div>
+		</section>
+	);
+}
+
+/**
+ * 비활성화 예시 JSX 반환 메서드
+ *
+ * @returns {JSX.Element} JSX
+ */
+export function Disabled(): JSX.Element
+{
+	return (
+		<section className={cn('root')}>
+			<div className={cn('row')}>
+				<Input color='basic' placeholder='basic disabled' disabled />
+			</div>
+
+			<div className={cn('row')}>
+				<Input border='round' placeholder='round disabled' disabled />
+			</div>
+
+			<div className={cn('row')}>
+				<Input border='circle' color='warn' placeholder='circle warn disabled' disabled />
+			</div>
+		</section>
+	);
+}
+
+/**
+ * 필수 예시 JSX 반환 메서드
+ *
+ * @returns {JSX.Element} JSX
+ */
+export function Required(): JSX.Element
+{
+	return (
+		<section className={cn('root')}>
+			<div className={cn('row')}>
+				<Input color='basic' placeholder='basic required' required />
+			</div>
+
+			<div className={cn('row')}>
+				<Input border='round' placeholder='round required' required />
+			</div>
+
+			<div className={cn('row')}>
+				<Input border='circle' color='warn' placeholder='circle warn required' required />
+			</div>
+		</section>
+	);
+}

@@ -1,5 +1,5 @@
 module.exports = {
-  core: {
+  "core": {
     builder: 'webpack5',
   },
   "stories": [

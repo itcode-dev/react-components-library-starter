@@ -46,7 +46,7 @@ export default function Input({ border, color, className, ...props }: InputProps
 	};
 
 	return (
-		<div className={cn('input-wrap', `border-${border}`, `color-${color}`, `required-${props.required}`)}>
+		<div className={cn('input-wrap', `border-${border}`, `color-${color}`, `disabled-${props.disabled}`, `required-${props.required}`)}>
 			<input className={cn(className, 'input')} ref={ref} {...props} onInput={handleInputEvent} />
 			<button className={cn('button')} disabled={!state} onClick={handleButtonClickEvent}><IoClose /></button>
 		</div>

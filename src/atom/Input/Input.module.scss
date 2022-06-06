@@ -40,7 +40,11 @@
 	}
 
 	&.required-true {
-		background-color: aliceblue;
+		background-color: rgb(217, 241, 252);
+	}
+
+	&.disabled-true {
+		background-color: #EEEEEE;
 	}
 }
 
@@ -49,7 +53,7 @@
 	border: transparent;
 	padding: 5px 0px 5px 10px;
 
-	font-size: 1rem;
+	font-family: inherit;
 
 	&:focus {
 		outline: none;
