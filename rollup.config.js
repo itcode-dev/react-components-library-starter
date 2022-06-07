@@ -16,7 +16,7 @@ const extensions = [ 'js', 'jsx', 'ts', 'tsx', 'mjs' ];
 
 const config = [
 	{
-		external: [ /node_modules/, /style-inject/ ],
+		external: [ /node_modules/ ],
 		input: './src/index.ts',
 		output: [
 			{
@@ -24,6 +24,10 @@ const config = [
 				format: 'cjs',
 				preserveModules: true,
 				preserveModulesRoot: 'src'
+			},
+			{
+				file: './dist/index.es.js',
+				format: 'es'
 			}
 		],
 		plugins: [
@@ -38,34 +42,11 @@ const config = [
 			typescript({ tsconfig: './tsconfig.json' }),
 			postcss({
 				extract: false,
-				inject(cssVariableName)
-				{
-					return `import styleInject from 'style-inject';\nstyleInject(${cssVariableName});`;
-				},
+				inject: (cssVariableName) => `import styleInject from 'style-inject';\nstyleInject(${cssVariableName});`,
 				modules: true,
 				sourceMap: false,
 				use: [ 'sass' ]
-			}),
-			{
-				generateBundle: (options, bundle) =>
-				{
-					Object.entries(bundle).forEach((entry) =>
-					{
-						if (entry[0].match(/.*(.scss).js$/))
-						{
-							// eslint-disable-next-line no-param-reassign
-							// bundle[entry[0]].code = entry[1].code.replace('../../node_modules/', '');
-						}
-
-						else if (entry[0].match(/.js$/) && !entry[0].match(/index.js$/) && !entry[0].match(/.d.ts$/) && !entry[0].match(/^node_modules/))
-						{
-							// eslint-disable-next-line no-param-reassign
-							// bundle[entry[0]].code = entry[1].code.replace('../../node_modules/', '');
-						}
-					});
-				},
-				name: 'Custom Rollup Plugin'
-			}
+			})
 		]
 	}
 ];

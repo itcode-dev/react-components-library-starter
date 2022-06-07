@@ -42,8 +42,9 @@ export const Sandbox = getTemplate.bind({});
 Sandbox.args = {
 	border: 'flat',
 	disabled: false,
+	placeholder: 'here',
 	required: false
-};
+} as InputProps;
 
 /**
  * 테두리 예시 JSX 반환 메서드

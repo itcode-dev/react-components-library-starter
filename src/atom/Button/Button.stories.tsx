@@ -44,7 +44,7 @@ Sandbox.args = {
 	children: 'Button',
 	color: 'basic',
 	disabled: false
-};
+} as ButtonProps;
 
 /**
  * 테두리 예시 JSX 반환 메서드
