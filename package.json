@@ -1,6 +1,6 @@
 {
   "name": "@itcode-dev/react-components-library-starter",
-  "version": "1.0.10",
+  "version": "3.0.0-alpha",
   "main": "./dist/index.js",
   "module": "./dist/index.es.js",
   "types": "./dist/index.d.ts",
