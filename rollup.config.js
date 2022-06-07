@@ -12,6 +12,8 @@ import typescript from '@rollup/plugin-typescript';
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 import postcss from 'rollup-plugin-postcss';
 
+const pkg = require('./package.json');
+
 const extensions = [ 'js', 'jsx', 'ts', 'tsx', 'mjs' ];
 
 const config = [
@@ -28,6 +30,11 @@ const config = [
 			{
 				file: './dist/index.es.js',
 				format: 'es'
+			},
+			{
+				file: './dist/index.umd.js',
+				format: 'umd',
+				name: pkg.name
 			}
 		],
 		plugins: [
