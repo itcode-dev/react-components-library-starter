@@ -20,12 +20,10 @@ git clone https://github.com/itcode-dev/react-components-library-starter [lib_na
 ### 2. Configuration
 
 ``` json
-// package.json
 {
 	"name": "[lib_name]",
 	"repository": "[repo_url]",
 	"author": "[repo_name]",
-	// ...
 }
 ```
 
