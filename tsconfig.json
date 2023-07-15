@@ -1,0 +1,33 @@
+{
+	"compilerOptions": {
+		"target": "es5",
+		"module": "esnext",
+		"jsx": "react-jsx",
+		"strict": true,
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"sourceMap": false,
+		"declaration": true,
+		"declarationDir": "./dist",
+		"moduleResolution": "Node",
+		"removeComments": true,
+		"baseUrl": ".",
+		"paths": {
+			"@core": [
+				"./src/index.ts"
+			],
+			"@core/*": [
+				"./src/*"
+			]
+		}
+	},
+	"include": [
+		"**/*.ts",
+		"**/*.tsx",
+	],
+	"exclude": [
+		".yarn",
+		"dist",
+		"node_modules",
+	]
+}
