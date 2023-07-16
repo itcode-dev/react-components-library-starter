@@ -8,6 +8,8 @@
 - **Rollup.js** 빌더를 사용합니다.
 - **Storybook**을 통해 컴포넌트를 테스트할 수 있습니다.
 
+[여기를 클릭](https://project.itcode.dev/react-components-library-starter)하여 실제 Storybook을 확인하실 수 있습니다.
+
 ## Guide
 
 ### 1. Repository Clone
