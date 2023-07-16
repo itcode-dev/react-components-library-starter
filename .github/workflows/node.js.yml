@@ -28,14 +28,14 @@ jobs:
 
       - name: Dependencies Install
         run: yarn install
-        
+
       - name: Storybook Build
         run: yarn build-storybook
 
       - name: Pushes to Kapoo Public Repository
         uses: cpina/github-action-push-to-another-repository@main
         env:
-          API_TOKEN_GITHUB: ${{ secrets.TOKEN }}
+          API_TOKEN_GITHUB: ${{ secrets.GH_TOKEN }}
         with:
           source-directory: storybook-static
           destination-github-username: ${{ vars.NAME }}
