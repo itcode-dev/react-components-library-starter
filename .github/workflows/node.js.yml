@@ -38,7 +38,7 @@ jobs:
           API_TOKEN_GITHUB: ${{ secrets.GH_TOKEN }}
         with:
           source-directory: storybook-static
-          destination-github-username: ${{ vars.NAME }}
+          destination-github-username: RWB0104
           destination-repository-name: react-components-library-starter
           user-email: ${{ vars.EMAIL }}
           target-branch: main
